@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shell People Analytics</title>
+    <meta
+      name="description"
+      content="Live HR workforce analytics dashboard for Shell UK employee headcount, attrition, compensation, and retention risk."
+    />
+    <meta property="og:title" content="Shell People Analytics" />
+    <meta
+      property="og:description"
+      content="Live HR workforce analytics dashboard for Shell UK employee headcount, attrition, compensation, and retention risk."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('shell-pa-theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F7F7F8] text-neutral-950 dark:bg-[#0A0A0B] dark:text-neutral-50 antialiased selection:bg-[#FFC800]/40 selection:text-neutral-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
